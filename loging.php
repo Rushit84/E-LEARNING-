@@ -1,3 +1,29 @@
+<?php
+session_start();
+
+$conn = new mysqli("localhost", "root", "", "elearning1");
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST['student_name'];
+    $password = $_POST['password'];
+
+    $sql = "SELECT * FROM students WHERE student_name='$name'";
+    $result = $conn->query($sql);
+
+    if ($result && $row = $result->fetch_assoc()) {
+        if ($password === $row['password']) { // plain text password check
+            $_SESSION['student_name'] = $row['student_name'];
+            header("Location: index.php");
+            exit();
+        } else {
+            echo "<script>alert('Incorrect password.');</script>";
+        }
+    } else {
+        echo "<script>alert('Student not found.');</script>";
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
