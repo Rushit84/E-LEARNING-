@@ -108,7 +108,7 @@ CREATE TABLE `contact_queries` (
 --
 
 INSERT INTO `contact_queries` (`id`, `student_name`, `email`, `subject`, `message`, `created_at`) VALUES
-(1, 'khushi raiyani', 'khushi@gmail.com', 'software developer', 'this couses charges ?', '2025-09-09 18:29:24');
+(1, 'rushit vaghasiya', 'rushit@gmail.com', 'software developer', 'this couses charges ?', '2025-09-09 18:29:24');
 
 -- --------------------------------------------------------
 
@@ -190,7 +190,7 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`id`, `student_name`, `email`, `feedback_text`, `submitted_at`) VALUES
-(1, 'khushi raiyani', 'khushi@gmail.com', 'this pages feedback msg', '2025-09-09 23:58:32');
+(1, 'rushit vaghasiya', 'rushit@gmail.com', 'this pages feedback msg', '2025-09-09 23:58:32');
 
 -- --------------------------------------------------------
 
@@ -212,8 +212,8 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `student_name`, `email`, `password`, `city`, `mobile`) VALUES
-(1, 'khushi raiyani', 'khushi@gmail.com', 'khushi raiyani', NULL, NULL),
-(19, 'khushi', 'admin@gmail.com', 'khushi', '', '');
+(1, 'rushit vaghasiya', 'rushit@gmail.com', 'rushit vaghasiya', NULL, NULL),
+(19, 'rushit', 'admin@gmail.com', 'rushit', '', '');
 
 -- --------------------------------------------------------
 
@@ -232,7 +232,7 @@ CREATE TABLE `subscribers` (
 --
 
 INSERT INTO `subscribers` (`id`, `email`, `subscribed_at`) VALUES
-(1, 'khushi@gmail.com', '2025-09-09 18:27:53');
+(1, 'rushit@gmail.com', '2025-09-09 18:27:53');
 
 -- --------------------------------------------------------
 
@@ -252,7 +252,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `city`) VALUES
-(1, 'khushi raiyani', '2d75a833de8a38dff78ffb4183cd8672', '');
+(1, 'rushit vaghasiya', '2d75a833de8a38dff78ffb4183cd8672', '');
 
 -- --------------------------------------------------------
 
@@ -273,9 +273,9 @@ CREATE TABLE `watch` (
 --
 
 INSERT INTO `watch` (`id`, `student_name`, `course_id`, `course_name`, `watched_at`) VALUES
-(24, 'khushi', 11, 'C Programming', '2025-09-26 16:20:07'),
-(25, 'khushi raiyani', 1, 'HTML', '2025-10-18 20:56:36'),
-(26, 'khushi raiyani', 1, 'HTML', '2025-10-18 21:01:28');
+(24, 'rushit', 11, 'C Programming', '2025-09-26 16:20:07'),
+(25, 'rushit vaghasiya', 1, 'HTML', '2025-10-18 20:56:36'),
+(26, 'rushit vaghasiya', 1, 'HTML', '2025-10-18 21:01:28');
 
 --
 -- Indexes for dumped tables
