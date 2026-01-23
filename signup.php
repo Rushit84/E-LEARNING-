@@ -148,19 +148,6 @@ $conn->close();
     </style>
 </head>
 
-<body>
-    <div class="form-container">
-        <h2>E-Learning Signup</h2>
-        <form method="POST">
-            <input type="text" name="student_name" placeholder="Student Name" required>
-            <input type="email" name="email" placeholder="Email ID" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <input type="text" name="city" placeholder="City">
-            <input type="text" name="mobile" placeholder="Mobile Number">
-            <input type="submit" value="Sign Up">
-            <a href="login.php">Already registered? Login</a>
-        </form>
-    </div>
-</body>
+
 
 </html>
