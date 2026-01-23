@@ -128,3 +128,61 @@ while($row = mysqli_fetch_assoc($features_result)) { $features[] = $row['feature
     </div>
     <!-- Service End -->
 
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="img-fluid position-absolute w-100 h-100" src="<?php echo $about['image']; ?>" alt="" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h6 class="section-title bg-white text-start text-primary pe-3"><?php echo $about['subtitle']; ?></h6>
+                <h1 class="mb-4"><?php echo $about['title']; ?></h1>
+                <p class="mb-4"><?php echo $about['description1']; ?></p>
+                <p class="mb-4"><?php echo $about['description2']; ?></p>
+                <div class="row gy-2 gx-4 mb-4">
+                    <?php foreach($features as $f){ ?>
+                        <div class="col-sm-6">
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i><?php echo $f; ?></p>
+                        </div>
+                    <?php } ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+    <!-- Footer Start -->
+    <?php
+    include_once("includes/footer.php");
+    ?>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+    <!-- script-->
+    <?php
+    include_once("includes/script.php");
+    ?>
+
+    <!-- Spinner Hide Script -->
+    <script>
+        (function () {
+            const hideSpinner = () => {
+                const el = document.getElementById("spinner");
+                if (el) el.classList.remove("show");
+            };
+
+            document.addEventListener("DOMContentLoaded", hideSpinner);
+            window.addEventListener("load", hideSpinner);
+            setTimeout(hideSpinner, 3000); // failsafe
+        })();
+    </script>
+
+
+</body>
+</html>
