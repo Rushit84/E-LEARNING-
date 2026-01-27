@@ -147,18 +147,4 @@ $catQuery = $conn->query("SELECT * FROM course_categories ORDER BY id ASC");
     <!-- Scripts -->
     <?php include_once("includes/script.php"); ?>
 
-    <!-- Spinner Hide Script -->
-    <script>
-        (function () {
-            const hideSpinner = () => {
-                const el = document.getElementById("spinner");
-                if (el) el.classList.remove("show");
-            };
-
-            document.addEventListener("DOMContentLoaded", hideSpinner);
-            window.addEventListener("load", hideSpinner);
-            setTimeout(hideSpinner, 3000); // failsafe
-        })();
-    </script>
-</body>
-</html>
+   

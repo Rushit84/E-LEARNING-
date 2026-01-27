@@ -212,8 +212,8 @@ CREATE TABLE `students` (
 --
 
 INSERT INTO `students` (`id`, `student_name`, `email`, `password`, `city`, `mobile`) VALUES
-(1, 'rushit vaghasiya', 'rushit@gmail.com', 'rushit vaghasiya', NULL, NULL),
-(19, 'rushit', 'admin@gmail.com', 'rushit', '', '');
+(1, 'rushit ', 'rushit@gmail.com', '852', NULL, NULL),
+(19, 'vaibhav', 'admin@gmail.com', '123', '', '');
 
 -- --------------------------------------------------------
 
